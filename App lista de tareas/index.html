@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt>
+	<script src="https://kit.fontawesome.com/2d9235d257.js" crossorigin="anonymous"></script>
+	<title>Agenda Digital</title>
+	<link rel="stylesheet" href="Assets/CSS/main.css" />
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+</head>
+<body>
+   <header class="header">
+        <div class="container">
+        <div class="btn-menu">
+        </div>
+        <hr>
+            <nav class="menu">
+                <a href="index.html" class="Inicio">Inicio</a>
+                <a href="index2.html">Calendario</a> 
+                <a href="#">Cuenta</a>
+                
+            </nav>
+        </div>
+
+         <!--DATE-HOUR-->
+    <div class="date">
+            <div class="dateRight">
+                <div id="dateNumber"></div>
+                <div>
+                    <div id="dateMonth"></div>
+                    <div id="dateYear"></div>
+                </div>
+            </div>
+            <div id="dateText"></div>
+        </div>
+
+        <!--POPUP/AGREGAR TAREA-->
+<button id="btn-abrir-popup" class="btn-abrir-popup">
+    <i class="fi fi-rr-pencil">
+</i></button>
+      
+
+    <div class="overlay" id="overlay">
+      <div class="popup" id="popup">
+        <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+               <h3>Agrega Tu tarea</h3>
+        <form id="new-task-form">
+            <input 
+                type="text" 
+                name="new-task-input" 
+                id="new-task-input" 
+                placeholder="Que tienes Planeado para hoy?" />
+            <input 
+                type="submit"
+                id="new-task-submit" 
+                value="✔" />
+        </form>
+    
+        
+      </div>
+    </div>
+  </div>
+
+    </header>
+
+   
+    
+    <main>
+        <section class="task-list">
+    <div class="h3"><h3>Tareas pendiente</h3></div>
+            <div id="tasks">
+            </div>
+        </section>
+    </main>
+
+<div class="Usuario"></div>
+      <div class="h2"><h2>Bienvenido (Usuario)</h2></div>
+      <div class="Barrita"><hr></div>
+
+  <script src="Assets/JS/popup.js"></script>
+  <script src="Assets/JS/script.js"></script>
+</body>
+</html>
